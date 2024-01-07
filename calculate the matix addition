@@ -1,0 +1,23 @@
+# create the first nested list
+matrix1 = [[1, 2, 3],
+           [4, 5, 6],
+           [7, 8, 9]]
+
+# create the second nested list
+matrix2 = [[9, 8, 7],
+           [6, 5, 4],
+           [3, 2, 1]]
+
+# initialize the result matrix with zeros
+result = [[0, 0, 0],
+          [0, 0, 0],
+          [0, 0, 0]]
+
+# perform the matrix addition
+for i in range(len(matrix1)):
+    for j in range(len(matrix1[0])):
+        result[i][j] = matrix1[i][j] + matrix2[i][j]
+
+# print the result matrix
+for row in result:
+    print(row)
