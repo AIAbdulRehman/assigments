@@ -1,0 +1,16 @@
+# Define the input string
+input_string = "Hello, how are you?"
+
+# Initialize a variable to store the count of vowels
+vowel_count = 0
+
+# Define the set of vowels
+vowels = {'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'}
+
+# Iterate through the characters in the string
+for char in input_string:
+    if char in vowels:
+        vowel_count += 1
+
+# Print the count of vowels
+print("Number of vowels:", vowel_count)

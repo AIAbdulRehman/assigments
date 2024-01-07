@@ -1,0 +1,5 @@
+num = int(input("Enter a number: "))
+sum = 0
+while sum < num:
+  sum += (sum + 1)
+  print(f"The sum of natural numbers up to {num} is {sum}.")

@@ -1,0 +1,24 @@
+# Get user input for the number
+num = input("Enter a number: ")
+
+# Convert the input to a string for easier manipulation
+num_str = str(num)
+
+# Initialize variables for comparison
+left = 0
+right = len(num_str) - 1
+is_palindrome = True
+
+# Use a while loop to compare digits from the left and right ends of the number
+while left < right:
+    if num_str[left] != num_str[right]:
+        is_palindrome = False
+        break
+    left += 1
+    right -= 1
+
+# Output the result
+if is_palindrome:
+    print(num, "is a palindrome")
+else:
+    print(num, "is not a palindrome")
